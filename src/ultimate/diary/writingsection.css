@@ -1,0 +1,102 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#top{
+    -fx-background-color: #42A5F5;
+}
+#bottom{
+    -fx-background-color: #BBDEFB;
+}
+#saveb{
+    -fx-background-image: url("saveicon.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 40 40;
+    -fx-background-position: center center;
+}
+#saveb:hover{
+    -fx-background-color: #BBDEFB;
+}
+#diaryicon{
+    -fx-background-image: url("diaryicon.png");
+    -fx-background-color: transparent;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 55 55;
+}
+#writeb{
+    -fx-background-image: url("pencil.png");
+    -fx-background-color: transparent;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30 30;
+}
+#writeb:hover{
+    -fx-background-color: #BBDEFB;
+}
+#colorpaletteb{
+    -fx-background-image: url("color.png");
+    -fx-background-color: transparent;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 40 40;
+}
+#colorpaletteb:hover{
+    -fx-background-color: #BBDEFB;
+}
+#hidepaletteb{
+    -fx-background-image: url("closeblack.png");
+    -fx-background-color: transparent;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30 30;
+}
+#write {
+    -fx-font-family:verdana;
+    -fx-font-size:20;
+    -fx-background-color: transparent;
+}
+#write .scroll-pane {
+    -fx-background-color: transparent;
+}
+#write .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+#write .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+#write .scroll-bar:vertical:disabled{
+    -fx-opacity: 0;
+}
+#colorpalettepane{
+    -fx-background-color: white;
+}
+#yellowb{
+    -fx-background-color: #FFEB3B;
+}
+#orangeb{
+    -fx-background-color: #FF5722;
+}
+#violetb{
+    -fx-background-color: #673AB7;
+}
+#blueb{
+    -fx-background-color: #2196F3;
+}
+#greenb{
+    -fx-background-color: #4CAF50;
+}
+#brownb{
+    -fx-background-color: #795548;
+}
+#greyb{
+    -fx-background-color: #9E9E9E;
+}
+#pinkb{
+    -fx-background-color: #E91E63;
+}
+#aquab{
+    -fx-background-color: #009688;
+}
+

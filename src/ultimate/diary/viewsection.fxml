@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultimate.diary.ViewsectionController">
+    <stylesheets>
+        <URL value="@viewsection.css" />
+    </stylesheets>
+   <children>
+      <DatePicker fx:id="datechose" layoutX="113.0" layoutY="127.0" onAction="#dispdate" promptText="mm/dd/yyyy" />
+      <TableView fx:id="table" layoutX="125.0" layoutY="200.0" prefHeight="150.0" prefWidth="175.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+   </children>
+</AnchorPane>

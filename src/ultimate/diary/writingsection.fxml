@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#exitscreen" prefHeight="750.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultimate.diary.WritingsectionController">
+    <stylesheets>
+        <URL value="@writingsection.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="top" prefHeight="60.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="saveb" layoutX="652.0" layoutY="10.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="writeb" layoutX="599.0" layoutY="10.0" mnemonicParsing="false" onAction="#writeb" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="colorpaletteb" layoutX="544.0" layoutY="10.0" mnemonicParsing="false" onAction="#showpalette" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="diaryicon" layoutX="6.0" layoutY="3.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="55.0" />
+            <Label layoutX="68.0" layoutY="22.0" text="Personal Diary">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="bottom" layoutY="60.0" prefHeight="690.0" prefWidth="700.0">
+         <children>
+            <TextArea fx:id="write" layoutX="37.0" layoutY="61.0" prefHeight="597.0" prefWidth="630.0" />
+            <Pane fx:id="colorpalettepane" layoutX="177.0" layoutY="102.0" onMouseEntered="#colorselect" prefHeight="400.0" prefWidth="350.0">
+               <children>
+                  <Button fx:id="yellowb" layoutX="31.0" layoutY="28.0" mnemonicParsing="false" onAction="#applyyellow" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="orangeb" layoutX="140.0" layoutY="28.0" mnemonicParsing="false" onAction="#applyorange" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="violetb" layoutX="247.0" layoutY="28.0" mnemonicParsing="false" onAction="#applyviolet" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="blueb" layoutX="31.0" layoutY="155.0" mnemonicParsing="false" onAction="#applyblue" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="greenb" layoutX="140.0" layoutY="155.0" mnemonicParsing="false" onAction="#applygreen" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="brownb" layoutX="247.0" layoutY="155.0" mnemonicParsing="false" onAction="#applybrown" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="greyb" layoutX="31.0" layoutY="278.0" mnemonicParsing="false" onAction="#applygrey" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="pinkb" layoutX="140.0" layoutY="278.0" mnemonicParsing="false" onAction="#applypink" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="aquab" layoutX="247.0" layoutY="278.0" mnemonicParsing="false" onAction="#applyaqua" prefHeight="90.0" prefWidth="70.0" />
+                  <Button fx:id="hidepaletteb" layoutX="321.0" layoutY="-1.0" mnemonicParsing="false" onAction="#hide" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </Pane>
+            <Label fx:id="message" layoutX="225.0" layoutY="545.0" text="Cannot Save a Blank Page!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="savemessage" layoutX="259.0" layoutY="522.0" text="Saved Successfully!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

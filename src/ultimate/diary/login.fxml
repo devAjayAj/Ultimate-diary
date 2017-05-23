@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#exitscreen" prefHeight="300.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultimate.diary.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="usernamel" layoutX="94.0" layoutY="105.0" text="Username:" textFill="WHITE" />
+      <Label fx:id="passl" layoutX="94.0" layoutY="148.0" text="Password:" textFill="WHITE" />
+      <TextField fx:id="userid" layoutX="169.0" layoutY="101.0" />
+      <PasswordField fx:id="pass" layoutX="169.0" layoutY="144.0" onKeyPressed="#enter" />
+      <Button fx:id="exitb" layoutX="376.0" minHeight="22.0" mnemonicParsing="false" onAction="#exitb" prefHeight="22.0" prefWidth="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label layoutX="14.0" layoutY="269.0" text="&quot;Either write something worth reading or do something worth writing&quot;" textFill="WHITE" wrapText="true" />
+      <Button fx:id="loginb" layoutX="248.0" layoutY="188.0" minHeight="28.0" mnemonicParsing="false" onAction="#submit" prefHeight="28.0" prefWidth="70.0" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

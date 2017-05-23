@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#AnchorPane{
+    -fx-background-color: #2196F3;
+}
+#exitb{
+    -fx-background-color: transparent;
+    -fx-background-image: url("exit.png");
+    -fx-background-position: center center;
+    -fx-background-size: 22 22;
+    -fx-background-repeat: no-repeat;
+}
+#loginb{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
